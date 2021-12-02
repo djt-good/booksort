@@ -1,0 +1,7 @@
+# Project exclude paths
+/booksort/target/
+/bookstore/target/
+/jdbc/target/
+/out/
+/test/target/
+/test2/target/

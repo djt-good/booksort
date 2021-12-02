@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/booksort/booksort.iml" filepath="$PROJECT_DIR$/booksort/booksort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore/bookstore.iml" filepath="$PROJECT_DIR$/bookstore/bookstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc3/jdbc3.iml" filepath="$PROJECT_DIR$/jdbc3/jdbc3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc4/jdbc4.iml" filepath="$PROJECT_DIR$/jdbc4/jdbc4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet01/servlet01.iml" filepath="$PROJECT_DIR$/servlet01/servlet01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test2/test2.iml" filepath="$PROJECT_DIR$/test2/test2.iml" />
+    </modules>
+  </component>
+</project>

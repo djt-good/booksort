@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.mapper.BookorderMapper">
+  <resultMap id="BaseResultMap" type="com.wz.domain.Bookorder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="orderid" jdbcType="INTEGER" property="orderid" />
+    <result column="rid" jdbcType="INTEGER" property="rid" />
+    <result column="bid" jdbcType="INTEGER" property="bid" />
+    <result column="orderstatus" jdbcType="INTEGER" property="orderstatus" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+  </resultMap>
+
+  <resultMap id="BaseResultMap2" type="com.wz.domain.BookVo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="r.eid" jdbcType="INTEGER" property="eid" />
+    <result column="bk.bookname" jdbcType="VARCHAR" property="bookname" />
+    <result column="bk.author" jdbcType="VARCHAR" property="author" />
+    <result column="bk.num" jdbcType="INTEGER" property="num" />
+    <result column="bk.price" jdbcType="INTEGER" property="price" />
+    <result column="bk.category" jdbcType="VARCHAR" property="category" />
+    <result column="b.orderstatus" jdbcType="INTEGER" property="orderstatus" />
+  </resultMap>
+
+  <select id="findAll" resultMap="BaseResultMap2">
+    select r.eid,bk.bookname,bk.author,bk.num,bk.price,bk.category,b.orderstatus
+      from bookorder b
+      inner join reader r on r.eid =b.rid
+     inner join book bk on bk.bid =b.bid
+      where r.eid=#{eid}
+
+--       SELECT
+--       b.bid,b.bookname,b.author,b.detail,b.price,b.category
+--
+--        FROM book b where bid = in(SELECT bid from bookorder WHERE rid = #{id} and orderstatus = 1)
+  </select>
+</mapper>

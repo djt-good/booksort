@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="booksort:war">
+    <output-path>$PROJECT_DIR$/booksort/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>booksort</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="pro-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="booksort:war exploded" />
+    </root>
+  </artifact>
+</component>
